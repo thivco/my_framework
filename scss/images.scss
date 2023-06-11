@@ -1,0 +1,23 @@
+.img-rounded {
+  max-width: 100%;
+    border-radius: 0.5rem;
+  }
+  
+  .img-circle {
+    max-width: 100%;
+
+    border-radius: 50%;
+  }
+  
+  .img-thumbnail {
+    max-width: 100%;
+
+    padding: 0.2rem;
+    border: 1px solid grey;
+  }
+  
+  .img-blur {
+    max-width: 100%;
+
+    filter: blur(2px);
+  }

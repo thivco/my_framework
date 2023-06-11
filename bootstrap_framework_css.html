@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://kit.fontawesome.com/04b36feceb.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Bostrap</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <div
+        class="mobile-nav-toggle"
+        aria-controls="primary-navigation"
+        aria-expanded="false"
+      >
+        <i class="fa-solid fa-bars"></i>
+      </div>
+      <div class="navbar">
+        <a href="#" class="nav-logo">Navigue.</a>
+        <div class="navbar-infos">
+          <div class="nav-items">
+            <ul class="nav-list">
+              <li class="nav-item nav-active">
+                <a href="#" class="navbar-link">Accueil</a>
+              </li>
+              <li class="nav-item">
+                <a href="#" class="navbar-link">Liens</a>
+              </li>
+              <li class="nav-item">
+                <a href="#" class="nav-dropdown-link navbar-link">Déroulage</a>
+                <div class="nav-dropdown" aria-expanded="false">
+                  <a href="#" id="hideAll" class="nav-dropdown-item" aria-checked="false">Tout cacher/Réveler</a>
+                  <a href="#" class="nav-dropdown-item">Lien secondaire</a>
+                </div>
+              </li>
+              <li class="nav-disabled nav-item">
+                <a class="navbar-link" href="#">Interdit</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <form action="" class="nav-search-form">
+          <input
+            type="search"
+            class="nav-search-input"
+            placeholder="Rechercher"
+          />
+          <button class="nav-search-btn">Valider</button>
+        </form>
+      </div>
+    </header>
+    <!-- <div class="container container-fluid">
+      <div class="row">
+        <div class="col-3">
+          <ul class="nav-tabs">
+            <li class="nav-tab">
+              <a class="tab-link tab-link-active" data-toggle="tab" href="#tab1"
+                >Tab 1</a
+              >
+            </li>
+            <li class="nav-tab">
+              <a class="tab-link" data-toggle="tab" href="#tab2">Tab 2</a>
+            </li>
+          </ul>
+
+          <div class="tab-contents">
+            <div id="tab1" class="tab-content tab-active">
+              <p>Premier onglet</p>
+            </div>
+            <div id="tab2" class="tab-content">
+              <p>Second onglet</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div> -->
+
+    <div id="container" class="container container-fuid">
+      <div class="row">
+        <h1 class="row-title col-center">Bienvenue sur le Framework</h1>
+      </div>
+      <div class="row">
+        <p class="col-center">
+          Découvrez le bootstrap avec un peu plus de saveur
+        </p>
+      </div>
+      <div class="row">
+        <h1 class="row-title col-center">Les grids</h1>
+      </div>
+      <div class="row">
+        <div class="col-1 col-red"><p class="col-text-center">Dream on</p></div>
+        <div class="col-1 col-orange">
+          <p class="col-text-center">Dream on</p>
+        </div>
+        <div class="col-1 col-yellow">
+          <p class="col-text-center">Dream on</p>
+        </div>
+        <div class="col-1 col-green">
+          <p class="col-text-center">Dream on</p>
+        </div>
+        <div class="col-1 col-blue">
+          <p class="col-text-center">Dream on</p>
+        </div>
+        <div class="col-1 col-purple">
+          <p class="col-text-center">Dream on</p>
+        </div>
+        <div class="col-1 col-teal">
+          <p class="col-text-center">Dream on</p>
+        </div>
+        <div class="col-1 col-brown">
+          <p class="col-text-center">Dream on</p>
+        </div>
+        <div class="col-1 col-pink">
+          <p class="col-text-center">Dream on</p>
+        </div>
+        <div class="col-1 col-gray">
+          <p class="col-text-center">Dream on</p>
+        </div>
+        <div class="col-1 col-black">
+          <p class="col-text-center">Dream on</p>
+        </div>
+        <div class="col-1 col-vantablack">
+          <p class="col-text-center">Dream on</p>
+        </div>
+      </div>
+      <div class="row">
+        <h2 class="col-center">Nos meilleures colonnes à votre disposition</h2>
+      </div>
+      <div class="row">
+        <div class="col-2 col-green">2</div>
+        <div class="col-2 col-purple">2</div>
+        <div class="col-2 col-brown">2</div>
+        <div class="col-2 col-teal">2</div>
+        <div class="col-2 col-red">2</div>
+        <div class="col-2 col-orange">2</div>
+      </div>
+      <div class="row">
+        <div class="col-3 col-blue">3</div>
+        <div class="col-3 col-gray">3</div>
+        <div class="col-3 col-black">3</div>
+        <div class="col-3 col-pink">3</div>
+      </div>
+      <div class="row">
+        <div class="col-4 col-vantablack">4</div>
+        <div class="col-4 col-red">4</div>
+        <div class="col-4 col-purple">4</div>
+      </div>
+      <div class="row">
+        <div class="col-6 col-blue">6</div>
+        <div class="col-6 col-yellow">6</div>
+      </div>
+      <div class="row">
+        <h1 class="row-title col-center">Les boutons</h1>
+      </div>
+      <div class="row">
+        <div class="col-4">
+          <button class="btn btn-1 btn-red">Bouton principal</button>
+        </div>
+        <div class="col-4">
+          <button class="btn btn-2 btn-blue">Bouton validé</button>
+        </div>
+        <div class="col-4">
+          <button class="btn btn-3" disabled>Bouton inaccessible</button>
+        </div>
+      </div>
+      <div class="row">
+        <h1 class="row-title col-center">Les images</h1>
+      </div>
+      <div class="row">
+        <img
+          src="https://game.capcom.com/manual/MHW/img/page/167_1_1.jpg?t=202007090000"
+          class="img-rounded col-3"
+          alt="alatreon"
+        />
+        <img
+          src="https://game.capcom.com/manual/MHW/img/page/167_1_1.jpg?t=202007090000"
+          class="img-circle col-3"
+          alt="alatreon"
+        />
+        <img
+          src="https://game.capcom.com/manual/MHW/img/page/167_1_1.jpg?t=202007090000"
+          class="img-thumbnail col-3"
+          alt="alatreon"
+        />
+        <img
+          src="https://game.capcom.com/manual/MHW/img/page/167_1_1.jpg?t=202007090000"
+          class="img-blur col-3"
+          alt="alatreon"
+        />
+      </div>
+      <div class="row">
+        <h1 class="row-title col-center">Les textes et alertes</h1>
+      </div>
+      <div class="row">
+        <h2 class="col-center">Les textes</h2>
+      </div>
+      <div class="row">
+        <p class="col-4 text-muted">
+          Voilà, ça c'est un texte pas très visible. Lorem ipsum dolor sit amet
+          consectetur adipisicing elit. Similique, inventore.
+        </p>
+        <p class="col-4 text-primary">
+          Voilà, ça c'est un texte principal et parfaitement banal. Lorem ipsum
+          dolor sit amet consectetur adipisicing elit. Similique, inventore.
+        </p>
+        <p class="col-4 text-warning">
+          Voilà, ça c'est un texte d'avertissement. Lorem ipsum dolor sit amet
+          consectetur adipisicing elit. Similique, inventore.
+        </p>
+      </div>
+      <div class="row">
+        <p class="col-4 text-info">
+          Voilà, ça c'est un texte informatif. Lorem ipsum dolor sit amet
+          consectetur adipisicing elit. Similique, inventore.
+        </p>
+        <p class="col-4 text-success">
+          Voilà, ça c'est un texte plutôt positif.. Lorem ipsum dolor sit amet
+          consectetur adipisicing elit. Similique, inventore.
+        </p>
+        <p class="col-4 text-error">
+          Voilà, ça c'est un texte d'erreur, ATTENTION. Lorem ipsum dolor sit
+          amet consectetur adipisicing elit. Similique, inventore.
+        </p>
+      </div>
+      <div class="row">
+        <h2 class="col-center">Les alertes</h2>
+      </div>
+      <div class="row">
+        <div class="col-center">
+          <p class="alert-warning">ALERTE : Erreur critique</p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-center">
+          <p class="alert-success">Réussite</p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-center">
+          <p class="alert-info">
+            Info : vous saviez combien de temps ça prend de faire un framework ?
+          </p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-center">
+          <p class="alert-danger">T'AS TOUT CASSE LE SITE</p>
+        </div>
+      </div>
+      <div class="row">
+        <h1 class="row-title col-center">Le pop in</h1>
+      </div>
+      <div class="row">
+        <div class="col-center">
+          <button
+            id="open-modal-btn"
+            data-target="modal"
+            class="btn btn-3 btn-green"
+          >
+            Voir les modalités
+          </button>
+          <div id="modal" class="modal">
+            <div class="modal-content" id="modal-content">
+              <h2>Acceepter les cookies</h2>
+              <p>
+                Ce site utilise des cookies pour nourrir les estomacs froids à
+                la pause de 4h. Ça vous tente ?
+                <br />
+                Vous savez que ça m'a pris une heure de faire le click hors du
+                popin pour le fermer ? Moi oui.
+              </p>
+              <button class="btn btn-2 btn-blue" id="close-btn">
+                Force à toi
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <h1 class="row-title col-center">Les tabs</h1>
+      </div>
+      <div class="row tabs">
+        <div class="col-3"><a href="#" class="tab-link">Tab</a></div>
+        <div class="col-3"><a href="#" class="tab-link">Tab</a></div>
+        <div class="col-3"><a href="#" class="tab-link">Tab</a></div>
+        <div class="col-3"><a href="#" class="tab-link">Tab</a></div>
+      </div>
+      <div class="row">
+        <h1 class="row-title col-center">Les infobulles</h1>
+      </div>
+      <div class="row">
+        <div class="col-4"></div>
+        <button class="col-4 btn btn-2 btn-blue info-btn" value="Ici, du texte additionnel lu par quelques utilisateurs. Un bon spot à easter eggs. Enfin je dis ça..." data-placement="right">Faire apparaître l'infobulle</button>
+      </div>
+    </div>
+
+    <!-- <div class="container container-fluid"> -->
+    <!-- <div class="row">
+        <p class="col-1">Col 1</p>
+      </div>
+      <div class="row">
+        <p class="col-2">Col 2</p>
+      </div>
+      <div class="row">
+        <p class="col-3">Col 3</p>
+      </div>
+      <div class="row">
+        <p class="col-4">Col 4</p>
+      </div>
+      <div class="row">
+        <p class="col-6">Col 6</p>
+      </div>
+      <div class="row">
+        <p class="col-1">Col1</p>
+        <p class="col-6">Ouais</p>
+        <p class="col-2">Truc</p>
+      </div> 
+      <div class="row">
+        <a href="#" class="btn btn-1 btn-orange" id="open-modal-btn">VALIDER</a>
+        <a href="#" class="btn btn-2 btn-red">VALIDER</a>
+        <a href="#" class="btn btn-3 btn-blue btn-disabled">VALIDER</a>
+      </div> 
+      <div class="row">
+        <img src="https://game.capcom.com/manual/MHW/img/page/167_1_1.jpg?t=202007090000" class="img-rounded col-4" alt="alatreon">
+        <img src="https://game.capcom.com/manual/MHW/img/page/167_1_1.jpg?t=202007090000" class="img-circle col-4" alt="alatreon">
+        <img src="https://game.capcom.com/manual/MHW/img/page/167_1_1.jpg?t=202007090000" class="img-thumbnail col-4" alt="alatreon">
+      </div>
+      <div class="row">
+        <img src="https://game.capcom.com/manual/MHW/img/page/167_1_1.jpg?t=202007090000" class="img-blur col-2" alt="alatreon">
+      </div> 
+      <div class="row">
+        <p class="col-1 text-muted">Text muet ! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consequuntur, hic.</p>
+        <p class="col-1 text-primary">Text principal ! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consequuntur, hic.</p>
+        <p class="col-1 text-success">Text réussi ! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consequuntur, hic.</p>
+        <p class="col-1 text-info">Text info ! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consequuntur, hic.</p>
+        <p class="col-1 text-warning">Text averto ? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consequuntur, hic.</p>
+        <p class="col-1 text-error">Text error. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consequuntur, hic.</p>
+      </div>
+      <div class="row">
+        <div class="col-4 alert-success" role="alert">Alerte réussie</div>
+      </div>
+      <div class="row">
+        <div class="col-4 alert-info" role="alert">Info alerte</div>
+      </div>
+      <div class="row">
+        <div class="col-4 alert-warning" role="alert">Avertissement</div>
+      </div>
+      <div class="row">
+        <div class="col-4 alert-danger" role="alert">DANGER</div>
+      </div> 
+      <div class="row">
+        <p class="visible-print">Imprimmable</p>
+        <p class="hidden-print">Pas Imprimmable</p>
+        <p class="visible-mobile">Mobile</p>
+        <p class="visible-desktop">Ordi</p>
+      </div>
+    </div>
+    <div id="modal" class="modal">
+      <div class="modal-content">
+        <h2>Acceepter les cookies</h2>
+        <p>Ce site utilise des cookies pour nourrir les estomacs froids pour la pause de 4h. Ça vous tente ?</p>
+        <button class="btn btn-1 btn-blue" id="close-btn">Oui, mais ferme la popup</button>
+      </div>
+    </div> -->
+  </body>
+  <script src="script.js"></script>
+</html>

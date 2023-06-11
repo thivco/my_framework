@@ -1,0 +1,28 @@
+@use 'scss/col3.scss';
+@use 'scss/buttons.scss';
+@use 'scss/alerts.scss';
+@use 'scss/images.scss';
+@use 'scss/variables.scss';
+@use 'scss/visible.scss';
+@use 'scss/texts.scss';
+@use 'scss/navbar.scss';
+@use 'scss/modals.scss';
+@use 'scss/tabs.scss';
+@use 'scss/global.scss';
+
+* {
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  list-style: none;
+}
+
+body {
+  font-size: 0.9rem;
+  font-family: sans-serif;
+}
+
+.container-hide {
+  display : none;
+}
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,30 @@
+@mixin alert() {
+  padding: 0.5rem;
+  border-radius: 5px;
+  max-width: fit-content;
+}
+
+.alert-success {
+  @include alert();
+  background: rgb(209, 255, 209);
+  border: 1px solid rgb(67, 167, 67);
+}
+
+.alert-info {
+  @include alert();
+  background: rgb(211, 209, 255);
+  border: 1px solid rgb(67, 119, 167);
+}
+
+.alert-warning {
+  @include alert();
+  background: rgb(255, 229, 164);
+  border: 1px solid rgb(185, 155, 65);
+}
+
+.alert-danger {
+  @include alert();
+  background: rgb(255, 209, 209);
+  border: 1px solid rgb(167, 67, 67);
+  font-weight: bold;
+}

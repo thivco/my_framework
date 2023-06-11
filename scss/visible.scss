@@ -1,0 +1,45 @@
+// @use 'variables.scss';
+$mobile-breakpoint: 768px;
+$desktop-breakpoint: 992px;
+
+.visible-print {
+    display: none;
+  }
+  
+  @media print {
+    .visible-print {
+      display: block;
+    }
+  
+    .hidden-print {
+      display: none;
+    }
+  }
+  
+  .visible-mobile {
+    display: none;
+    @media (max-width: $mobile-breakpoint) {
+      display: block;
+    }
+  }
+  
+  .hidden-mobile {
+    display: block;
+    @media (max-width: $mobile-breakpoint) {
+      display: none;
+    }
+  }
+  
+  .visible-desktop {
+    display: none;
+    @media (min-width: $desktop-breakpoint) {
+      display: block;
+    }
+  }
+  
+  .hidden-desktop {
+    display: block;
+    @media (min-width: $desktop-breakpoint) {
+      display: none;
+    }
+  }
